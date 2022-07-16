@@ -1,5 +1,46 @@
-
 * {
     margin: 0px;
     box-sizing: border-box;
+}
+
+$colorDiv1 : red;
+$colorDiv2 : green;
+$colorDiv3 : blue;
+$colorDiv4 : yellow;
+$colorFondo : gray;
+
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: $colorFondo;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+}
+
+#div1 {
+    @extend div;
+    background-color: $colorDiv1;
+}
+#div2{
+    @extend div;
+    background-color: $colorDiv2;
+}
+
+#div3 {
+    @extend div;
+    background-color: $colorDiv3;
+}
+
+#div4 {
+    @extend div;
+    background-color: $colorDiv4;
 }
