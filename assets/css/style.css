@@ -3,4 +3,35 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+div, #div4, #div3, #div2, #div1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 15%;
+}
+
+#div1 {
+  background-color: red;
+}
+
+#div2 {
+  background-color: green;
+}
+
+#div3 {
+  background-color: blue;
+}
+
+#div4 {
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=style.css.map */
